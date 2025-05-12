@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad Metro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1c92d2, #f2fcfe);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navbar Styles */
+        nav {
+            width: 100%;
+            background: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            /* box-shadow: 0 2px 5px rgba(0,0,0,0.2); */
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-links a {
+            color: #000000;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #4d95de;
+        }
+
+        header {
+            text-align: center;
+            margin: 120px 0 50px 0;
+        }
+
+        header h1 {
+            font-size: 48px;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .button-container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .metro-btn {
+            padding: 20px 40px;
+            font-size: 20px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .book-btn {
+            background: #00c6ff;
+        }
+
+        .book-btn:hover {
+            background: #0072ff;
+            transform: scale(1.05);
+        }
+
+        .check-btn {
+            background: #36d1dc;
+        }
+
+        .check-btn:hover {
+            background: #5b86e5;
+            transform: scale(1.05);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
+            color: #fff;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="./image.png" alt="Hyderabad Metro Logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Book Tickets</a>
+            <a href="#">Checkings</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="./me-time-1.png" alt="Hyderabad Metro Logo">
+            </a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Welcome to Hyderabad Metro</h1>
+    </header>
+
+    <div class="button-container">
+        <button class="metro-btn book-btn" onclick="alert('Redirecting to Ticket Booking!')">Book Tickets</button>
+        <button class="metro-btn check-btn" onclick="alert('Redirecting to Checkings!')">Checkings</button>
+    </div>
+
+    <footer>
+        &copy; 2025 Hyderabad Metro. All rights reserved.
+    </footer>
+
+</body>
+</html>
